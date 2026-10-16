@@ -3,7 +3,7 @@
 > **OpenAI-compatible zero-leakage privacy proxy that strips Indian personal data (Aadhaar, PAN, GSTIN, Phone, UPI, IFSC, Hinglish names & landmark addresses) before prompts leave your network, and restores them in the response.**  
 > *Built for the [DEV / Hacktoberfest Open-Source AI Challenge — Week 2: Side Hustle](https://dev.to/challenges/hacktoberfest-week2-2026-10-12).*
 
-**[🎬 3.5-Min Walkthrough Video](docs/demo/indian_pii_shield_demo.mp4)** · **[⚖️ Judge Verification Guide](docs/JUDGE_GUIDE.md)** · **[🏆 Prize Category Mapping](docs/PRIZE_CATEGORIES.md)** · **[📜 Cryptographic Receipts](docs/evidence/)** · **[📊 Benchmarks](docs/evidence/benchmark/receipt.json)**
+**[🎬 Watch on YouTube (3.5-Min Walkthrough)](https://youtu.be/pyicDKBNpPE)** · **[⚖️ Judge Verification Guide](docs/JUDGE_GUIDE.md)** · **[🏆 Prize Category Mapping](docs/PRIZE_CATEGORIES.md)** · **[📜 Cryptographic Receipts](docs/evidence/)** · **[📊 Benchmarks](docs/evidence/benchmark/receipt.json)**
 
 ---
 

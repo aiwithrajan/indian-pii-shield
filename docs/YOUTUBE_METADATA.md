@@ -61,12 +61,12 @@ Generic Western redactors fail because:
 • Human-In-The-Loop (HITL) Quarantine Workflow pausing execution on high-risk PII until an authorized admin issues an authenticated approval signal.
 
 4. ZERO RAW PII ON DISK (DPDP ACT §8):
-• Ephemeral RAM heap with sub-millisecond TTL (<0.2ms).
+• Ephemeral RAM heap with sub-millisecond TTL (sub-0.2ms).
 • SQLite audit ledger records only timestamps, latency, entity counts, and SHA-256 chained hashes. Exactly 0 Bytes of raw PII written to disk.
 
 5. 2-MINUTE DROP-IN PROXY:
 • 100% OpenAI API compatible. Developers simply redirect base_url='http://127.0.0.1:8080/v1'.
-• Upstream LLM receives only sanitized tokens (<PAN_1>, <AADHAAR_1>).
+• Upstream LLM receives only sanitized tokens ([PAN_1], [AADHAAR_1]).
 • Outbound response automatically restores original values transparently.
 
 ---
