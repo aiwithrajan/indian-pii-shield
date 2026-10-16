@@ -106,7 +106,9 @@ export class ApiValidationError extends Error {
 
 export const API_BASE_URL = typeof window !== 'undefined' && (window as any).__SHIELD_API_URL__
   ? (window as any).__SHIELD_API_URL__
-  : 'http://127.0.0.1:8080';
+  : (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1'
+      ? window.location.origin
+      : 'http://127.0.0.1:8080');
 
 // Aliases for compatibility with IndianPIIShieldUI.tsx
 export { ApiError as ApiHttpError, ApiValidationError as MalformedResponseError };

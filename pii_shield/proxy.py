@@ -363,3 +363,37 @@ def temporal_stats():
     """Returns Temporal cluster connection posture and throughput metrics."""
     return temporal_service.get_stats()
 
+
+# ==========================================
+# 6. STATIC ASSETS & PRODUCTION SPA HOSTING
+# ==========================================
+
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
+DIST_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dist")
+if os.path.exists(DIST_DIR):
+    assets_dir = os.path.join(DIST_DIR, "assets")
+    if os.path.exists(assets_dir):
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+
+    @app.api_route("/{full_path:path}", methods=["GET", "HEAD"])
+    async def serve_spa(full_path: str):
+        # Don't intercept API routes or health
+        if (
+            full_path.startswith("api/") or
+            full_path.startswith("v1/") or
+            full_path == "health" or
+            full_path.startswith("audit/") or
+            full_path.startswith("policy") or
+            full_path.startswith("redact/")
+        ):
+            raise HTTPException(status_code=404, detail="Not Found")
+        target_file = os.path.join(DIST_DIR, full_path)
+        if full_path and os.path.exists(target_file) and os.path.isfile(target_file):
+            return FileResponse(target_file)
+        index_file = os.path.join(DIST_DIR, "index.html")
+        if os.path.exists(index_file):
+            return FileResponse(index_file)
+        raise HTTPException(status_code=404, detail="SPA not built")
+

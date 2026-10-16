@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: indian-pii-shield
+    runtime: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: PYTHONUNBUFFERED
+        value: 1

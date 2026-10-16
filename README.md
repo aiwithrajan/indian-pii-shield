@@ -5,6 +5,8 @@
 
 **[🎬 Watch on YouTube (3.5-Min Walkthrough)](https://youtu.be/pyicDKBNpPE)** · **[⚖️ Judge Verification Guide](docs/JUDGE_GUIDE.md)** · **[🏆 Prize Category Mapping](docs/PRIZE_CATEGORIES.md)** · **[📜 Cryptographic Receipts](docs/evidence/)** · **[📊 Benchmarks](docs/evidence/benchmark/receipt.json)**
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/aiwithrajan/indian-pii-shield)
+
 ---
 
 ## 💡 The Problem: Indian PII Leaking into Hosted LLMs
