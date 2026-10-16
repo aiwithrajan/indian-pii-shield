@@ -4,10 +4,10 @@
     "platform": "macOS-15.8-x86_64-i386-64bit",
     "python_version": "3.9.6",
     "processor": "i386",
-    "timestamp_utc": "2026-10-16T12:30:23.953859+00:00"
+    "timestamp_utc": "2026-10-16T19:18:03.875235+00:00"
   },
   "git": {
-    "commit": "unknown",
+    "commit": "ae062ae85ca83e9be616e19e8fbb0ad1a1fc8867",
     "branch": "main"
   },
   "benchmarks": {
@@ -25,7 +25,7 @@
     "raw_pii_written_to_disk_bytes": 0,
     "sqlite_ledger_persistence": {
       "db_file": "shield_ledger.db",
-      "db_file_bytes": 36864,
+      "db_file_bytes": 40960,
       "retained_fields": [
         "request_id",
         "timestamp_utc",
@@ -44,5 +44,5 @@
       ]
     }
   },
-  "sha256_receipt_hash": "8e21e89100a322bcfe331c61ccb0ce12d5da80e6f9656cd5d5514aca1ed6c32b"
+  "sha256_receipt_hash": "2f368c8b72c6c398d348e59291747a73b7e16935c8a176247ad3009d46846fba"
 }

@@ -4,23 +4,23 @@
     "platform": "macOS-15.8-x86_64-i386-64bit",
     "python_version": "3.9.6",
     "processor": "i386",
-    "timestamp_utc": "2026-10-16T12:30:15.682444+00:00"
+    "timestamp_utc": "2026-10-16T19:17:51.709615+00:00"
   },
   "git": {
-    "commit": "unknown",
+    "commit": "ae062ae85ca83e9be616e19e8fbb0ad1a1fc8867",
     "branch": "main"
   },
   "workflow_execution": {
-    "workflow_id": "wf-pii-5ac6d0d0",
-    "run_id": "run-8d5a56",
+    "workflow_id": "wf-pii-67881a02",
+    "run_id": "run-1427ef",
     "status": "COMPLETED",
-    "total_duration_ms": 2408.21,
+    "total_duration_ms": 4179.88,
     "activities_executed": [
       {
         "activity": "scan_pii_activity",
         "status": "COMPLETED",
         "attempt": 1,
-        "latency_ms": 1665.52
+        "latency_ms": 2990.13
       },
       {
         "activity": "evaluate_policy_activity",
@@ -32,7 +32,7 @@
         "activity": "dispatch_llm_activity",
         "status": "COMPLETED",
         "attempt": 1,
-        "latency_ms": 739.95
+        "latency_ms": 1185.51
       },
       {
         "activity": "record_audit_activity",
@@ -55,5 +55,5 @@
     "state": "RESUMED_AND_DISPATCHED",
     "latency_under_quarantine_ms": 52.4
   },
-  "sha256_receipt_hash": "d8212128c02bc44bb6c8f556752274d94a09a3abb9e7c9d25a98682f09fa3969"
+  "sha256_receipt_hash": "26642c9547296723c97d15729e60db3a7884c7f3dabe7252005719f4632f29af"
 }
