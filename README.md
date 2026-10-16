@@ -3,7 +3,7 @@
 > **OpenAI-compatible zero-leakage privacy proxy that strips Indian personal data (Aadhaar, PAN, GSTIN, Phone, UPI, IFSC, Hinglish names & landmark addresses) before prompts leave your network, and restores them in the response.**  
 > *Built for the [DEV / Hacktoberfest Open-Source AI Challenge — Week 2: Side Hustle](https://dev.to/challenges/hacktoberfest-week2-2026-10-12).*
 
-**[🌐 Live Demo on Render](https://indian-pii-shield.onrender.com)** · **[🎬 Watch on YouTube (3.5-Min Walkthrough)](https://youtu.be/pyicDKBNpPE)** · **[⚖️ Judge Verification Guide](docs/JUDGE_GUIDE.md)** · **[🏆 Prize Category Mapping](docs/PRIZE_CATEGORIES.md)** · **[📜 Cryptographic Receipts](docs/evidence/)** · **[📊 Benchmarks](docs/evidence/benchmark/receipt.json)**
+**[📝 Official Dev.to Submission Post](https://dev.to/rajan_mishra_a9f78ad216b4/indian-pii-shield-drop-in-openai-proxy-for-indias-dpdp-act-2023-34gd)** · **[🌐 Live Demo on Render](https://indian-pii-shield.onrender.com)** · **[🎬 Watch on YouTube](https://youtu.be/pyicDKBNpPE)** · **[⚖️ Judge Verification Guide](docs/JUDGE_GUIDE.md)** · **[🏆 Prize Categories](docs/PRIZE_CATEGORIES.md)**
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/aiwithrajan/indian-pii-shield)
 
