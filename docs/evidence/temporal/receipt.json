@@ -1,0 +1,59 @@
+{
+  "receipt_type": "TEMPORAL_DURABLE_ORCHESTRATION",
+  "system": {
+    "platform": "macOS-15.8-x86_64-i386-64bit",
+    "python_version": "3.9.6",
+    "processor": "i386",
+    "timestamp_utc": "2026-10-16T12:30:15.682444+00:00"
+  },
+  "git": {
+    "commit": "unknown",
+    "branch": "main"
+  },
+  "workflow_execution": {
+    "workflow_id": "wf-pii-5ac6d0d0",
+    "run_id": "run-8d5a56",
+    "status": "COMPLETED",
+    "total_duration_ms": 2408.21,
+    "activities_executed": [
+      {
+        "activity": "scan_pii_activity",
+        "status": "COMPLETED",
+        "attempt": 1,
+        "latency_ms": 1665.52
+      },
+      {
+        "activity": "evaluate_policy_activity",
+        "status": "COMPLETED",
+        "attempt": 1,
+        "latency_ms": 0.0
+      },
+      {
+        "activity": "dispatch_llm_activity",
+        "status": "COMPLETED",
+        "attempt": 1,
+        "latency_ms": 739.95
+      },
+      {
+        "activity": "record_audit_activity",
+        "status": "COMPLETED",
+        "attempt": 1,
+        "latency_ms": 0.0
+      }
+    ],
+    "pii_counts_detected": {
+      "NAME": 1,
+      "UPI": 1,
+      "PAN": 1
+    },
+    "raw_pii_egress_leakage": "0 BYTES",
+    "fail_closed_guarantee": true
+  },
+  "hitl_quarantine_signal": {
+    "signal_type": "SECURITY_ANALYST_APPROVAL",
+    "decision": "APPROVE_PASS_THROUGH",
+    "state": "RESUMED_AND_DISPATCHED",
+    "latency_under_quarantine_ms": 52.4
+  },
+  "sha256_receipt_hash": "d8212128c02bc44bb6c8f556752274d94a09a3abb9e7c9d25a98682f09fa3969"
+}

@@ -1,0 +1,48 @@
+{
+  "receipt_type": "BENCHMARK_ACCURACY_AND_ZERO_STORAGE",
+  "system": {
+    "platform": "macOS-15.8-x86_64-i386-64bit",
+    "python_version": "3.9.6",
+    "processor": "i386",
+    "timestamp_utc": "2026-10-16T12:30:23.953859+00:00"
+  },
+  "git": {
+    "commit": "unknown",
+    "branch": "main"
+  },
+  "benchmarks": {
+    "total_test_scenarios": 20,
+    "structured_ids_recall": 100.0,
+    "contextual_pii_recall": 100.0,
+    "round_trip_correctness_rate": 100.0,
+    "p50_cpu_latency_ms": 5.7,
+    "p95_cpu_latency_ms": 10.28,
+    "target_sla_ms": 2000.0,
+    "sla_margin_factor": "194x faster than SLA limit"
+  },
+  "zero_raw_pii_guarantee": {
+    "dpdp_act_2023_section_8_compliance": "STRICT_PASS",
+    "raw_pii_written_to_disk_bytes": 0,
+    "sqlite_ledger_persistence": {
+      "db_file": "shield_ledger.db",
+      "db_file_bytes": 36864,
+      "retained_fields": [
+        "request_id",
+        "timestamp_utc",
+        "latency_ms",
+        "pii_counts_json",
+        "sha256_audit_fingerprint",
+        "masked_prompt_sample"
+      ],
+      "purged_fields": [
+        "raw_aadhaar_numbers",
+        "raw_pan_numbers",
+        "raw_customer_names",
+        "raw_addresses",
+        "raw_credit_cards",
+        "raw_bank_accounts"
+      ]
+    }
+  },
+  "sha256_receipt_hash": "8e21e89100a322bcfe331c61ccb0ce12d5da80e6f9656cd5d5514aca1ed6c32b"
+}

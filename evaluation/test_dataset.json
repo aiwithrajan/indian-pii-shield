@@ -1,0 +1,106 @@
+[
+  {
+    "id": "eval_01",
+    "text": "Mera Aadhaar card number 2345 6789 0124 hai, please KYC verify karo.",
+    "expected_entities": [{"type": "AADHAAR", "value": "2345 6789 0124"}]
+  },
+  {
+    "id": "eval_02",
+    "text": "PAN card ABCDE1234F is required for loan sanction.",
+    "expected_entities": [{"type": "PAN", "value": "ABCDE1234F"}]
+  },
+  {
+    "id": "eval_03",
+    "text": "Company GSTIN 27AAACW1234F1ZO is registered in Maharashtra.",
+    "expected_entities": [{"type": "GSTIN", "value": "27AAACW1234F1ZO"}]
+  },
+  {
+    "id": "eval_04",
+    "text": "Call me on mobile +91 9876543210 for appointment confirmation.",
+    "expected_entities": [{"type": "PHONE", "value": "+91 9876543210"}]
+  },
+  {
+    "id": "eval_05",
+    "text": "Payment made through UPI id rahul.mishra@okaxis successfully.",
+    "expected_entities": [{"type": "UPI", "value": "rahul.mishra@okaxis"}]
+  },
+  {
+    "id": "eval_06",
+    "text": "Bank account branch IFSC is HDFC0001234.",
+    "expected_entities": [{"type": "IFSC", "value": "HDFC0001234"}]
+  },
+  {
+    "id": "eval_07",
+    "text": "Patient named Shri Rajan Mishra visited the clinic today.",
+    "expected_entities": [{"type": "NAME", "value": "Shri Rajan Mishra"}]
+  },
+  {
+    "id": "eval_08",
+    "text": "Deliver medicine to Sharma ji ke ghar ke paas wali gali, Near Metro Station, Indiranagar, Bangalore - 560038.",
+    "expected_entities": [{"type": "ADDRESS", "value": "Sharma ji ke ghar ke paas wali gali, Near Metro Station, Indiranagar, Bangalore - 560038"}]
+  },
+  {
+    "id": "eval_09",
+    "text": "OTP dictated on phone was nau aath saat chheh paanch char.",
+    "expected_entities": [{"type": "SPOKEN_DIGITS", "value": "nau aath saat chheh paanch char"}]
+  },
+  {
+    "id": "eval_10",
+    "text": "Please transfer 2000 to ananya.sharma@paytm, she is waiting.",
+    "expected_entities": [{"type": "UPI", "value": "ananya.sharma@paytm"}]
+  },
+  {
+    "id": "eval_11",
+    "text": "Customer Rohit Verma registered with phone 9812345678 and PAN BCDFG9876K.",
+    "expected_entities": [
+      {"type": "NAME", "value": "Rohit Verma"},
+      {"type": "PHONE", "value": "9812345678"},
+      {"type": "PAN", "value": "BCDFG9876K"}
+    ]
+  },
+  {
+    "id": "eval_12",
+    "text": "Refund processed to IFSC SBIN0004567 for account verification.",
+    "expected_entities": [{"type": "IFSC", "value": "SBIN0004567"}]
+  },
+  {
+    "id": "eval_13",
+    "text": "Meeting scheduled with Dr. Ananya Sharma tomorrow at 3 PM.",
+    "expected_entities": [{"type": "NAME", "value": "Dr. Ananya Sharma"}]
+  },
+  {
+    "id": "eval_14",
+    "text": "Package returned from Flat 402, Green Enclave, Sector 62, Noida, Uttar Pradesh.",
+    "expected_entities": [{"type": "ADDRESS", "value": "Flat 402, Green Enclave, Sector 62, Noida, Uttar Pradesh"}]
+  },
+  {
+    "id": "eval_15",
+    "text": "Call the driver at 09876543210 when you arrive.",
+    "expected_entities": [{"type": "PHONE", "value": "09876543210"}]
+  },
+  {
+    "id": "eval_16",
+    "text": "Tax invoice has GSTIN 29ABCDE1234F1ZW attached.",
+    "expected_entities": [{"type": "GSTIN", "value": "29ABCDE1234F1ZW"}]
+  },
+  {
+    "id": "eval_17",
+    "text": "My phone digits are eight four two zero nine seven six five one zero.",
+    "expected_entities": [{"type": "SPOKEN_DIGITS", "value": "eight four two zero nine seven six five one zero"}]
+  },
+  {
+    "id": "eval_18",
+    "text": "Send contract copy to Vikram Patel at corporate office.",
+    "expected_entities": [{"type": "NAME", "value": "Vikram Patel"}]
+  },
+  {
+    "id": "eval_19",
+    "text": "Send the invoice to support@company.com with product specs.",
+    "expected_entities": []
+  },
+  {
+    "id": "eval_20",
+    "text": "The Python fast API server restarted with status code 200.",
+    "expected_entities": []
+  }
+]

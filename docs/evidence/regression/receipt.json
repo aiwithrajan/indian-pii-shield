@@ -1,0 +1,49 @@
+{
+  "receipt_type": "REGRESSION_MATHEMATICAL_VERIFICATION",
+  "system": {
+    "platform": "macOS-15.8-x86_64-i386-64bit",
+    "python_version": "3.9.6",
+    "processor": "i386",
+    "timestamp_utc": "2026-10-16T12:30:21.574270+00:00"
+  },
+  "git": {
+    "commit": "unknown",
+    "branch": "main"
+  },
+  "pytest_summary": {
+    "exit_code": 0,
+    "total_passed": 20,
+    "total_failed": 0,
+    "status": "ALL_TESTS_PASSING",
+    "test_modules": [
+      "tests/test_ai_ner.py (Indic NER detection)",
+      "tests/test_checksums.py (Verhoeff D5, Luhn, Modulo-36)",
+      "tests/test_detectors.py (17 Indian PII pattern integrity)",
+      "tests/test_leakage.py (Zero raw PII storage in ledger)",
+      "tests/test_proxy_api.py (OpenAI-compatible drop-in proxy)",
+      "tests/test_redact_restore.py (De-anonymization round-trip)",
+      "tests/test_temporal.py (4-Activity DAG & Service)",
+      "tests/test_verifier.py (Confidence & boundary resolution)"
+    ]
+  },
+  "mathematical_fixtures": {
+    "verhoeff_dihedral_group_d5": {
+      "valid_uidai_aadhaar": "2345 6789 0124",
+      "passed_validation": true,
+      "invalid_uidai_aadhaar": "2345 6789 0125",
+      "correctly_rejected": true
+    },
+    "luhn_modulo_10": {
+      "valid_card": "4532015112830366",
+      "passed_validation": true,
+      "invalid_card": "4532015112830367",
+      "correctly_rejected": true
+    },
+    "gstin_modulo_36": {
+      "input_entity_prefix": "27AAACW1234F1Z",
+      "computed_check_char": "O",
+      "verified": true
+    }
+  },
+  "sha256_receipt_hash": "39457c8c5b953bf3c74dbe4d3da27aba8d00dcedc8df34f57833ce5e902114c9"
+}

@@ -1,0 +1,33 @@
+# Indian-PII Shield Configuration
+server:
+  bind_host: "127.0.0.1"
+  bind_port: 8080
+  access_token: "" # Required if binding to anything other than 127.0.0.1
+  upstream_url: "https://api.openai.com/v1" # Or any OpenAI-compatible base URL
+
+policy:
+  fail_closed: true # Block requests if detection pipeline errors or times out
+  allow_rules_only_fallback: true # Allow rules-only if contextual model unavailable
+  timeout_seconds: 5.0
+
+detectors:
+  aadhaar: true
+  pan: true
+  gstin: true
+  phone: true
+  upi: true
+  ifsc: true
+  name: true
+  address: true
+  spoken_digits: true
+
+thresholds:
+  aadhaar: 0.99
+  pan: 0.95
+  gstin: 0.95
+  phone: 0.90
+  upi: 0.90
+  ifsc: 0.95
+  name: 0.80
+  address: 0.75
+  spoken_digits: 0.85
