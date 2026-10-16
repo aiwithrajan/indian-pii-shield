@@ -98,3 +98,15 @@ Rather than trusting an LLM to guess whether an Aadhaar number or credit card is
 - Valid Aadhaar numbers pass the Verhoeff algorithm.
 - Fabricated or mistyped digits are immediately rejected with **zero false positives**.
 - Raw PII is never committed to persistent storage; only ephemeral RAM heap is used, guaranteeing **0 Bytes on disk** under DPDP Act 2023 Section 8.
+
+---
+
+## ☁️ Category 4: Best Use of Render — High-Availability Unified Hosting
+
+### The Deployment Architecture
+Indian-PII Shield is deployed on Render as a high-availability unified service:
+- **Live URL:** [https://indian-pii-shield.onrender.com](https://indian-pii-shield.onrender.com)
+- **Health Check Endpoint:** `https://indian-pii-shield.onrender.com/health` (HTTP 200 OK)
+- **Single-Origin Architecture:** Uses a multi-stage Dockerfile (`node:20-alpine` builds the React SPA and `python:3.11-slim` serves both UI and reverse proxy API).
+- **Auto-Deploy on Push:** Configured via `render.yaml` Blueprint connected directly to GitHub repository `aiwithrajan/indian-pii-shield`.
+- **Public Accessibility:** Judges and evaluators can interact with the live Playground, DAG visualizer, and test endpoints live from anywhere in the world.

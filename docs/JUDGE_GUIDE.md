@@ -2,7 +2,7 @@
 
 Welcome, Hacktoberfest Judges! This guide allows you to independently verify and reproduce all claims, benchmarks, and proofs in **Indian-PII Shield** in under 60 seconds.
 
-**[🎬 Watch Full 3.5-Minute Video Walkthrough on YouTube](https://youtu.be/pyicDKBNpPE)**
+**[🌐 Live Hosted Deployment on Render](https://indian-pii-shield.onrender.com)** · **[🎬 Watch 3.5-Minute Video Walkthrough on YouTube](https://youtu.be/pyicDKBNpPE)**
 
 ---
 
